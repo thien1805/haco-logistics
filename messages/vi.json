@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "home": "TRANG CHỦ",
+    "about": "GIỚI THIỆU CHUNG",
+    "services": "DỊCH VỤ",
+    "blog": "BÀI VIẾT",
+    "careers": "TUYỂN DỤNG",
+    "contact": "LIÊN HỆ",
+    "getQuote": "Nhận Báo Giá"
+  },
+  "hero": {
+    "title": "Giải Pháp Logistics Toàn Cầu",
+    "subtitle": "Kết nối thế giới, giao hàng đúng hẹn",
+    "cta": "Nhận Báo Giá Ngay"
+  },
+  "services": {
+    "title": "DỊCH VỤ CỦA CHÚNG TÔI",
+    "description": "HACO Logistics không chỉ là đơn vị vận tải, chúng tôi là giải pháp. Chúng tôi thấu hiểu những thách thức trong chuỗi cung ứng toàn cầu và cam kết đồng hành cùng bạn, cung cấp dịch vụ vận chuyển quốc tế chuyên nghiệp, linh hoạt, từ vận tải đường biển, đường hàng không đến đường bộ. HACO Logistics giúp bạn tối ưu hóa hoạt động kinh doanh, giảm thiểu rủi ro và tăng cường lợi thế cạnh tranh.",
+    "viewMore": "Xem thêm",
+    "sea": {
+      "title": "Vận tải đường biển",
+      "description": "Giải pháp tiết kiệm và hiệu quả cho các lô hàng có khối lượng lớn. Chúng tôi kết nối bạn với mạng lưới các cảng biển lớn trên toàn cầu, đảm bảo hàng hóa được vận chuyển an toàn, đúng lịch trình với chi phí tối ưu."
+    },
+    "air": {
+      "title": "Vận tải đường hàng không",
+      "description": "Khi tốc độ là yếu tố then chốt, dịch vụ vận tải hàng không của chúng tôi sẽ là lựa chọn hoàn hảo. HACO Logistics đảm bảo hàng hóa của bạn được vận chuyển nhanh chóng, an toàn tuyệt đối tới mọi điểm đến trên thế giới."
+    },
+    "road": {
+      "title": "Vận tải đường bộ",
+      "description": "Để hoàn thiện chuỗi cung ứng, chúng tôi cung cấp dịch vụ vận tải đường bộ toàn diện trong nước, đảm bảo hàng hóa được giao nhận tận nơi từ cảng biển, sân bay đến kho của bạn một cách nhanh chóng và an toàn nhất."
+    },
+    "customs": {
+      "title": "Khai báo hải quan",
+      "description": "Giúp đơn giản hóa mọi thủ tục phức tạp. Đội ngũ chuyên gia của chúng tôi sẽ hỗ trợ bạn hoàn tất các quy trình khai báo hải quan một cách nhanh chóng, chính xác, đảm bảo lô hàng được thông quan suôn sẻ, tránh mọi rủi ro và chậm trễ không đáng có."
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Thủ Tục Xuất Khẩu Đường Biển Gồm Những Giấy Tờ Gì?",
+        "answer": "Các tài liệu cụ thể cần thiết cho thủ tục xuất khẩu đường biển có thể khác nhau tùy thuộc vào quốc gia đến, loại hàng hóa được xuất khẩu và quy định của địa phương. Tuy nhiên, một số tài liệu phổ biến bao gồm: Hóa đơn thương mại, Bảng kê hàng hóa, Vận đơn, Giấy chứng nhận xuất xứ, Giấy phép xuất khẩu (nếu cần), Giấy chứng nhận kiểm dịch thực vật (đối với hàng nông sản), Các chứng nhận hoặc giấy phép khác theo yêu cầu của nước nhập khẩu."
+      },
+      {
+        "question": "Thủ Tục Xuất Khẩu Đường Hàng Không Gồm Những Giấy Tờ Gì?",
+        "answer": "Để xuất khẩu hàng hóa qua đường hàng không, bạn cần chuẩn bị: Hóa đơn thương mại, Bảng kê hàng hóa, Vận đơn hàng không (AWB), Giấy chứng nhận xuất xứ, Giấy phép xuất khẩu (nếu cần), Giấy tờ liên quan đến hàng hóa nguy hiểm (nếu có), Chứng nhận an ninh hàng không."
+      },
+      {
+        "question": "Thủ Tục Nhập Khẩu Đường Biển Gồm Những Giấy Tờ Gì?",
+        "answer": "Để nhập khẩu hàng hóa qua đường biển, bạn cần: Hóa đơn thương mại, Vận đơn (Bill of Lading), Bảng kê hàng hóa (Packing List), Giấy chứng nhận xuất xứ (C/O), Giấy phép nhập khẩu (đối với hàng hóa có điều kiện), Phiếu đóng gói, Tờ khai hải quan nhập khẩu."
+      },
+      {
+        "question": "Hồ Sơ Xin Giấy Phép Xuất Nhập Khẩu Cần Những Giấy Tờ Gì?",
+        "answer": "Hồ sơ xin giấy phép xuất nhập khẩu thường bao gồm: Đơn xin cấp giấy phép, Bản sao Giấy chứng nhận đăng ký kinh doanh, Hợp đồng mua bán ngoại thương, Hóa đơn thương mại, Tài liệu kỹ thuật của sản phẩm (nếu cần), Các giấy tờ khác theo yêu cầu của từng loại hàng hóa."
+      },
+      {
+        "question": "Hàng Hóa Thương Mại Là Gì?",
+        "answer": "Hàng hóa thương mại là những sản phẩm được mua bán nhằm mục đích kinh doanh, có giá trị kinh tế và được lưu thông trên thị trường. Đây là hàng hóa được vận chuyển với số lượng lớn, có hóa đơn, chứng từ đầy đủ và phải làm thủ tục hải quan khi xuất nhập khẩu."
+      },
+      {
+        "question": "Hàng Hoá Phi Thương Mại Là Gì?",
+        "answer": "Hàng hóa phi thương mại là những sản phẩm không nhằm mục đích kinh doanh, thường là quà tặng, đồ dùng cá nhân, mẫu hàng không có giá trị thương mại. Loại hàng này thường được miễn thuế hoặc có mức thuế ưu đãi khi nhập khẩu, tùy theo quy định của từng quốc gia."
+      },
+      {
+        "question": "Quy Trình Xin C/O (Giấy Chứng Nhận Xuất Xứ) Cần Các Chứng Từ Gì?",
+        "answer": "Để xin giấy chứng nhận xuất xứ (C/O), doanh nghiệp cần chuẩn bị: Đơn xin cấp C/O, Hóa đơn thương mại, Bảng kê hàng hóa, Tờ khai hải quan xuất khẩu, Giấy chứng nhận đăng ký kinh doanh, Bằng chứng về xuất xứ của nguyên liệu, Quy trình sản xuất (nếu cần)."
+      },
+      {
+        "question": "Quy Trình Hun Trùng Hàng Hóa Xuất Khẩu Gồm Những Bước Nào?",
+        "answer": "Quy trình hun trùng hàng hóa xuất khẩu gồm các bước: (1) Kiểm tra và chuẩn bị hàng hóa, (2) Đưa hàng vào khu vực hun trùng, (3) Thực hiện hun trùng bằng khí Methyl Bromide hoặc Phosphine, (4) Kiểm tra nồng độ khí đạt yêu cầu, (5) Thông khí sau khi hun trùng, (6) Kiểm tra và cấp giấy chứng nhận hun trùng, (7) Dán tem/nhãn hun trùng lên lô hàng."
+      }
+    ]
+  },
+  "quote": {
+    "title": "Nhận Báo Giá",
+    "subtitle": "Bạn đang cân nhắc hình thức giao hàng nào? Vui lòng điền thông tin bên dưới để nhận báo giá.",
+    "step1": {
+      "title": "Thông tin liên hệ",
+      "fullName": "Họ và tên",
+      "fullNamePlaceholder": "Họ và tên (Full Name)*",
+      "jobTitle": "Chức danh",
+      "jobTitlePlaceholder": "Chức danh (Job Title)*",
+      "company": "Tên công ty",
+      "companyPlaceholder": "Tên Công Ty (Company Name)",
+      "email": "Email",
+      "emailPlaceholder": "Email*",
+      "phone": "Số điện thoại",
+      "phonePlaceholder": "Số điện thoại (Phone Number)*"
+    },
+    "step2": {
+      "title": "Thông tin hàng hóa",
+      "serviceType": "Loại dịch vụ",
+      "seaFreight": "Vận tải đường biển",
+      "airFreight": "Vận tải đường hàng không",
+      "roadFreight": "Vận tải đường bộ",
+      "customs": "Khai báo hải quan",
+      "origin": "Cảng/địa điểm xuất phát",
+      "originPlaceholder": "Nhập cảng hoặc thành phố xuất phát",
+      "destination": "Cảng/địa điểm đến",
+      "destinationPlaceholder": "Nhập cảng hoặc thành phố đến",
+      "cargoType": "Loại hàng hóa",
+      "cargoPlaceholder": "Mô tả loại hàng hóa"
+    },
+    "step3": {
+      "title": "Chi tiết lô hàng",
+      "weight": "Trọng lượng (kg)",
+      "weightPlaceholder": "Nhập trọng lượng",
+      "volume": "Thể tích (CBM)",
+      "volumePlaceholder": "Nhập thể tích",
+      "quantity": "Số lượng kiện",
+      "quantityPlaceholder": "Nhập số lượng kiện",
+      "readyDate": "Ngày hàng sẵn sàng",
+      "notes": "Ghi chú thêm",
+      "notesPlaceholder": "Thông tin bổ sung, yêu cầu đặc biệt..."
+    },
+    "step4": {
+      "title": "Xác nhận thông tin",
+      "confirm": "Xác nhận và gửi",
+      "success": "Cảm ơn bạn! Chúng tôi sẽ liên hệ trong vòng 24 giờ.",
+      "error": "Có lỗi xảy ra, vui lòng thử lại."
+    },
+    "next": "Tiếp Theo",
+    "back": "Quay Lại",
+    "submit": "Gửi Báo Giá"
+  },
+  "footer": {
+    "company": "Công ty TNHH Giao nhận quốc tế HACO",
+    "address": "35J3M Đường DD7-1, Phường Đông Hưng Thuận, Thành phố Hồ Chí Minh, Việt Nam",
+    "email": "info@haco-logistics.com",
+    "phone": "028.3620.7045",
+    "services": "Dịch vụ của chúng tôi",
+    "copyright": "© 2026 All Rights Reserved.",
+    "followUs": "Theo dõi chúng tôi"
+  },
+  "servicePages": {
+    "overview": "Tổng quan",
+    "otherSolutions": "Các giải pháp logistics khác",
+    "viewMore": "Xem thêm",
+    "getQuoteNow": "Nhận báo giá ngay",
+    "seaCarousel": "Dịch vụ LCL, FCL kết nối hơn 200 cảng biển toàn cầu. Đối tác tin cậy cho hàng xuất nhập khẩu.",
+    "airCarousel": "Dịch vụ vận tải hàng không nhanh chóng và đáng tin cậy đến mọi điểm trên thế giới.",
+    "roadCarousel": "Giao hàng door-to-door trên toàn quốc và Đông Nam Á. Nhanh, an toàn và đáng tin cậy.",
+    "customsCarousel": "Đội chuyên gia hải quan giàu kinh nghiệm, thủ tục nhanh chóng và chính xác.",
+    "seaTitle": "Vận tải đường biển",
+    "airTitle": "Vận tải hàng không",
+    "roadTitle": "Vận tải đường bộ",
+    "customsTitle": "Khai báo hải quan",
+    "sea": {
+      "heroTitle": "Vận tải đường biển",
+      "heroSubtitle": "LCL & FCL — Kết nối Việt Nam với thị trường toàn cầu",
+      "overviewP1": "Trong bối cảnh thương mại quốc tế ngày càng phát triển, việc lựa chọn một đối tác vận tải đáng tin cậy là yếu tố then chốt giúp doanh nghiệp của bạn vươn xa.",
+      "overviewP2": "Với kinh nghiệm dày dặn và mạng lưới đối tác toàn cầu, HACO Logistics tự hào mang đến dịch vụ vận tải đường biển chất lượng cao, linh hoạt và hiệu quả. Chúng tôi cam kết tối ưu hóa chuỗi cung ứng của bạn, đảm bảo hàng hóa được vận chuyển an toàn, đúng thời gian và với chi phí cạnh tranh nhất.",
+      "h1Title": "Hiệu quả tối đa",
+      "h1Desc": "Với mạng lưới đối tác toàn cầu, chúng tôi đảm bảo lộ trình vận chuyển linh hoạt, kết nối các cảng biển lớn, giúp hàng hóa của bạn đến đích nhanh chóng và đúng lịch trình.",
+      "h2Title": "An toàn",
+      "h2Desc": "Quy trình quản lý chất lượng nghiêm ngặt và hệ thống theo dõi hiện đại giúp bạn luôn nắm rõ tình trạng lô hàng, an tâm về sự an toàn của tài sản.",
+      "h3Title": "Chi phí cạnh tranh",
+      "h3Desc": "Giải pháp tùy chỉnh và quy trình tối ưu hóa giúp tiết kiệm chi phí, nâng cao lợi nhuận cho doanh nghiệp của bạn.",
+      "h4Title": "Đa dạng dịch vụ",
+      "h4Desc": "Từ vận chuyển hàng nguyên container (FCL), hàng lẻ (LCL) đến các lô hàng đặc biệt, quá khổ, chúng tôi đều có thể đáp ứng một cách chuyên nghiệp.",
+      "ctaTitle": "Yêu cầu báo giá vận tải đường biển",
+      "ctaSubtitle": "Liên hệ ngay để nhận tư vấn miễn phí và báo giá tốt nhất cho lô hàng của bạn."
+    },
+    "air": {
+      "heroTitle": "Vận tải đường hàng không",
+      "heroSubtitle": "Nhanh chóng — Tin cậy — Đến mọi điểm trên thế giới",
+      "overviewP1": "Với dịch vụ vận tải hàng không của HACO, hàng hóa của bạn sẽ được vận chuyển nhanh chóng và an toàn đến mọi nơi trên thế giới. Chúng tôi cung cấp giải pháp logistics toàn diện, tối ưu thời gian và chi phí, giúp doanh nghiệp của bạn rút ngắn khoảng cách địa lý và mở rộng thị trường hiệu quả.",
+      "h1Title": "Nhanh chóng",
+      "h1Desc": "Transit 1–5 ngày làm việc, tùy chỉnh theo yêu cầu. Lựa chọn tối ưu khi thời gian là tiền bạc.",
+      "h2Title": "Chuyên nghiệp",
+      "h2Desc": "Đội chuyên viên vận tải hàng không, xử lý chứng từ phức tạp nhanh chóng, chính xác.",
+      "h3Title": "Toàn cầu",
+      "h3Desc": "Kết nối toàn bộ sân bay quốc tế, vận chuyển đến mọi điểm trên thế giới.",
+      "h4Title": "An toàn",
+      "h4Desc": "Bảo hiểm hàng hóa, xử lý hàng đặc biệt, kiểm soát chất lượng tuyệt đối.",
+      "ctaTitle": "Yêu cầu báo giá vận tải hàng không",
+      "ctaSubtitle": "Liên hệ ngay để nhận tư vấn miễn phí và báo giá tốt nhất cho lô hàng của bạn."
+    },
+    "road": {
+      "heroTitle": "Vận tải đường bộ",
+      "heroSubtitle": "Door-to-door — Toàn quốc & Đông Nam Á",
+      "overviewP1": "Dịch vụ vận tải đường bộ của HACO Logistics mang đến giải pháp giao nhận hàng hóa door-to-door nhanh chóng, an toàn trên toàn quốc và khu vực Đông Nam Á. Chúng tôi giúp doanh nghiệp hoàn thiện chuỗi cung ứng từ cảng biển, sân bay đến kho hàng.",
+      "h1Title": "Nhanh chóng",
+      "h1Desc": "Transit 1–5 ngày làm việc, tùy chỉnh theo yêu cầu. Lựa chọn tối ưu khi thời gian là tiền bạc.",
+      "h2Title": "Chuyên nghiệp",
+      "h2Desc": "Đội chuyên viên vận tải, xử lý chứng từ phức tạp nhanh chóng, chính xác.",
+      "h3Title": "Toàn quốc",
+      "h3Desc": "Kết nối mọi tỉnh thành trên cả nước và khu vực Đông Nam Á.",
+      "h4Title": "An toàn",
+      "h4Desc": "Bảo hiểm hàng hóa, xử lý hàng đặc biệt, kiểm soát chất lượng tuyệt đối.",
+      "ctaTitle": "Yêu cầu báo giá vận tải đường bộ",
+      "ctaSubtitle": "Liên hệ ngay để nhận tư vấn miễn phí và báo giá tốt nhất cho lô hàng của bạn."
+    },
+    "customs": {
+      "heroTitle": "Khai báo hải quan",
+      "heroSubtitle": "Nhanh chóng — Chính xác — Tuân thủ pháp luật",
+      "overviewP1": "Khai báo hải quan là khâu quan trọng trong quy trình xuất nhập khẩu. Việc khai báo chính xác và kịp thời giúp doanh nghiệp tránh các rủi ro pháp lý, giảm thiểu chi phí phát sinh và đảm bảo hàng hóa được thông quan nhanh chóng.",
+      "overviewP2": "Với đội ngũ chuyên gia hải quan giàu kinh nghiệm, HACO Logistics cung cấp dịch vụ khai báo hải quan toàn diện, từ phân loại mã HS, xác định chính sách thuế đến hoàn tất thủ tục thông quan. Chúng tôi cam kết mang đến sự an tâm tuyệt đối cho mọi lô hàng của bạn.",
+      "h1Title": "Nhanh chóng",
+      "h1Desc": "Khai báo điện tử qua hệ thống VNACCS/VCIS, xử lý tờ khai trong thời gian ngắn nhất, rút ngắn thời gian thông quan.",
+      "h2Title": "Chính xác",
+      "h2Desc": "Phân loại mã HS đúng, xác định chính sách thuế chính xác, tránh phát sinh chi phí và rủi ro pháp lý.",
+      "h3Title": "Chuyên nghiệp",
+      "h3Desc": "Đội ngũ khai báo viên có chứng chỉ hành nghề, am hiểu sâu về biểu thuế xuất nhập khẩu và quy định hải quan.",
+      "h4Title": "Toàn diện",
+      "h4Desc": "Hỗ trợ từ A đến Z: nhận hồ sơ, phân loại hàng hóa, khai báo, kiểm tra thực tế và giải phóng hàng.",
+      "ctaTitle": "Yêu cầu tư vấn khai báo hải quan",
+      "ctaSubtitle": "Liên hệ ngay để nhận tư vấn miễn phí và hỗ trợ thủ tục hải quan nhanh chóng, chính xác nhất."
+    }
+  }
+}

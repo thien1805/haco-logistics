@@ -3,25 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --haco-blue: #1B2A6B;
+  --haco-gold: #F5A623;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Custom max-width cho content rộng hơn */
+.max-w-7xl {
+  max-width: 1400px !important;
+}
+
+/* Tăng padding responsive */
+section {
+  @apply px-6 sm:px-8 lg:px-12 xl:px-16;
 }

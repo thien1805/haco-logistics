@@ -1,0 +1,26 @@
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.9s ease-out both;
+}
+
+.slide-title {
+  animation-delay: 0.1s;
+}
+
+.slide-desc {
+  animation-delay: 0.3s;
+}
+
+.slide-button {
+  animation-delay: 0.5s;
+}

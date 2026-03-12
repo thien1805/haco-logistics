@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT US",
+    "services": "SERVICES",
+    "blog": "BLOG",
+    "careers": "CAREERS",
+    "contact": "CONTACT",
+    "getQuote": "Get a Quote"
+  },
+  "hero": {
+    "title": "Global Logistics Solutions",
+    "subtitle": "Connecting the world, delivering on time",
+    "cta": "Get a Quote Now"
+  },
+  "services": {
+    "title": "OUR SERVICES",
+    "description": "HACO Logistics is not just a transportation company — we are a solution. We understand the challenges in global supply chains and are committed to supporting you with professional and flexible international shipping services, from sea freight and air freight to road transport. HACO Logistics helps you optimize your business operations, minimize risks, and enhance your competitive advantage.",
+    "viewMore": "View more",
+    "sea": {
+      "title": "Sea Freight",
+      "description": "A cost-effective solution for large volume shipments. We connect you to a network of major ports worldwide, ensuring your cargo is transported safely, on schedule, and at optimal cost."
+    },
+    "air": {
+      "title": "Air Freight",
+      "description": "When speed is the key factor, our air freight service is the perfect choice. HACO Logistics ensures your cargo is transported quickly and safely to any destination in the world."
+    },
+    "road": {
+      "title": "Road Transport",
+      "description": "To complete the supply chain, we provide comprehensive domestic road transport services, ensuring goods are delivered door-to-door from seaports and airports to your warehouse quickly and safely."
+    },
+    "customs": {
+      "title": "Customs Declaration",
+      "description": "We simplify all complex procedures. Our team of experts will help you complete customs declaration processes quickly and accurately, ensuring smooth customs clearance and avoiding unnecessary risks and delays."
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "What Documents Are Required for Sea Export Procedures?",
+        "answer": "The specific documents required for sea export procedures may vary depending on the destination country, type of goods being exported, and local regulations. However, some common documents include: Commercial invoice, Packing list, Bill of Lading, Certificate of Origin, Export license (if required), Phytosanitary certificate (for agricultural products), Other certificates or licenses as required by the importing country."
+      },
+      {
+        "question": "What Documents Are Required for Air Export Procedures?",
+        "answer": "To export goods by air, you need to prepare: Commercial invoice, Packing list, Airway Bill (AWB), Certificate of Origin, Export license (if required), Dangerous goods documents (if applicable), Aviation security certificate."
+      },
+      {
+        "question": "What Documents Are Required for Sea Import Procedures?",
+        "answer": "To import goods by sea, you need: Commercial invoice, Bill of Lading, Packing List, Certificate of Origin (C/O), Import license (for conditional goods), Packing slip, Import customs declaration."
+      },
+      {
+        "question": "What Documents Are Needed to Apply for an Import/Export License?",
+        "answer": "The application for an import/export license typically includes: Application form, Copy of business registration certificate, Foreign trade contract, Commercial invoice, Product technical documents (if required), Other documents as required for each type of goods."
+      },
+      {
+        "question": "What Is Commercial Cargo?",
+        "answer": "Commercial cargo refers to products bought and sold for business purposes, with economic value and circulated in the market. These are goods transported in large quantities, with complete invoices and documents, and require customs procedures for import and export."
+      },
+      {
+        "question": "What Is Non-Commercial Cargo?",
+        "answer": "Non-commercial cargo refers to products not intended for business purposes, typically gifts, personal belongings, or samples with no commercial value. This type of goods is usually exempt from taxes or subject to preferential tax rates upon import, depending on each country's regulations."
+      },
+      {
+        "question": "What Documents Are Needed to Apply for a C/O (Certificate of Origin)?",
+        "answer": "To apply for a Certificate of Origin (C/O), businesses need to prepare: C/O application form, Commercial invoice, Packing list, Export customs declaration, Business registration certificate, Evidence of raw material origin, Manufacturing process (if required)."
+      },
+      {
+        "question": "What Are the Steps in the Fumigation Process for Export Goods?",
+        "answer": "The fumigation process for export goods includes: (1) Inspect and prepare goods, (2) Move goods to fumigation area, (3) Perform fumigation using Methyl Bromide or Phosphine gas, (4) Check that gas concentration meets requirements, (5) Ventilate after fumigation, (6) Inspect and issue fumigation certificate, (7) Affix fumigation stamps/labels to the shipment."
+      }
+    ]
+  },
+  "quote": {
+    "title": "Get a Quote",
+    "subtitle": "Which shipping method are you considering? Please fill in the information below to receive a quote.",
+    "step1": {
+      "title": "Contact Information",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Full Name*",
+      "jobTitle": "Job Title",
+      "jobTitlePlaceholder": "Job Title*",
+      "company": "Company Name",
+      "companyPlaceholder": "Company Name",
+      "email": "Email",
+      "emailPlaceholder": "Email*",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Phone Number*"
+    },
+    "step2": {
+      "title": "Cargo Information",
+      "serviceType": "Service Type",
+      "seaFreight": "Sea Freight",
+      "airFreight": "Air Freight",
+      "roadFreight": "Road Transport",
+      "customs": "Customs Declaration",
+      "origin": "Origin Port/Location",
+      "originPlaceholder": "Enter origin port or city",
+      "destination": "Destination Port/Location",
+      "destinationPlaceholder": "Enter destination port or city",
+      "cargoType": "Cargo Type",
+      "cargoPlaceholder": "Describe cargo type"
+    },
+    "step3": {
+      "title": "Shipment Details",
+      "weight": "Weight (kg)",
+      "weightPlaceholder": "Enter weight",
+      "volume": "Volume (CBM)",
+      "volumePlaceholder": "Enter volume",
+      "quantity": "Number of Packages",
+      "quantityPlaceholder": "Enter number of packages",
+      "readyDate": "Cargo Ready Date",
+      "notes": "Additional Notes",
+      "notesPlaceholder": "Additional information, special requirements..."
+    },
+    "step4": {
+      "title": "Confirm Information",
+      "confirm": "Confirm and Submit",
+      "success": "Thank you! We will contact you within 24 hours.",
+      "error": "An error occurred, please try again."
+    },
+    "next": "Next",
+    "back": "Back",
+    "submit": "Send Quote Request"
+  },
+  "footer": {
+    "company": "HACO International Logistics Co., Ltd",
+    "address": "35J3M DD7-1 Street, Dong Hung Thuan Ward, Ho Chi Minh City, Vietnam",
+    "email": "info@haco-logistics.com",
+    "phone": "028.3620.7045",
+    "services": "Our Services",
+    "copyright": "© 2026 All Rights Reserved.",
+    "followUs": "Follow Us"
+  },
+  "servicePages": {
+    "overview": "Overview",
+    "otherSolutions": "Other Logistics Solutions",
+    "viewMore": "View more",
+    "getQuoteNow": "Get a quote now",
+    "seaCarousel": "LCL & FCL services connecting over 200 seaports worldwide. A trusted partner for import and export shipments.",
+    "airCarousel": "Fast and reliable air freight services to any destination in the world.",
+    "roadCarousel": "Door-to-door delivery nationwide and across Southeast Asia. Fast, safe, and reliable.",
+    "customsCarousel": "Experienced customs experts team, fast and accurate procedures.",
+    "seaTitle": "Sea Freight",
+    "airTitle": "Air Freight",
+    "roadTitle": "Road Transport",
+    "customsTitle": "Customs Declaration",
+    "sea": {
+      "heroTitle": "Sea Freight",
+      "heroSubtitle": "LCL & FCL — Connecting Vietnam to Global Markets",
+      "overviewP1": "In the context of growing international trade, choosing a reliable shipping partner is a key factor in helping your business expand globally.",
+      "overviewP2": "With extensive experience and a global partner network, HACO Logistics is proud to deliver high-quality, flexible, and efficient sea freight services. We are committed to optimizing your supply chain, ensuring cargo is transported safely, on time, and at the most competitive cost.",
+      "h1Title": "Maximum Efficiency",
+      "h1Desc": "With our global partner network, we ensure flexible shipping routes connecting major seaports, helping your cargo reach its destination quickly and on schedule.",
+      "h2Title": "Safety",
+      "h2Desc": "Strict quality management processes and modern tracking systems keep you informed of your shipment status, giving you peace of mind about your assets' safety.",
+      "h3Title": "Competitive Pricing",
+      "h3Desc": "Customized solutions and optimized processes help save costs and increase profitability for your business.",
+      "h4Title": "Diverse Services",
+      "h4Desc": "From full container load (FCL), less than container load (LCL) to special and oversized shipments, we can handle everything professionally.",
+      "ctaTitle": "Request a Sea Freight Quote",
+      "ctaSubtitle": "Contact us now for free consultation and the best quote for your shipment."
+    },
+    "air": {
+      "heroTitle": "Air Freight",
+      "heroSubtitle": "Fast — Reliable — To Every Destination Worldwide",
+      "overviewP1": "With HACO's air freight service, your cargo will be transported quickly and safely to anywhere in the world. We provide comprehensive logistics solutions, optimizing time and cost, helping your business bridge geographical distances and expand markets effectively.",
+      "h1Title": "Fast",
+      "h1Desc": "Transit 1–5 business days, customized to your requirements. The optimal choice when time is money.",
+      "h2Title": "Professional",
+      "h2Desc": "Expert air freight team, handling complex documentation quickly and accurately.",
+      "h3Title": "Global",
+      "h3Desc": "Connected to all international airports, shipping to every destination worldwide.",
+      "h4Title": "Safe",
+      "h4Desc": "Cargo insurance, special goods handling, and absolute quality control.",
+      "ctaTitle": "Request an Air Freight Quote",
+      "ctaSubtitle": "Contact us now for free consultation and the best quote for your shipment."
+    },
+    "road": {
+      "heroTitle": "Road Transport",
+      "heroSubtitle": "Door-to-door — Nationwide & Southeast Asia",
+      "overviewP1": "HACO Logistics' road transport service provides fast and safe door-to-door delivery solutions nationwide and across Southeast Asia. We help businesses complete the supply chain from seaports and airports to warehouses.",
+      "h1Title": "Fast",
+      "h1Desc": "Transit 1–5 business days, customized to your requirements. The optimal choice when time is money.",
+      "h2Title": "Professional",
+      "h2Desc": "Expert transport team, handling complex documentation quickly and accurately.",
+      "h3Title": "Nationwide",
+      "h3Desc": "Connected to all provinces and cities across the country and Southeast Asia region.",
+      "h4Title": "Safe",
+      "h4Desc": "Cargo insurance, special goods handling, and absolute quality control.",
+      "ctaTitle": "Request a Road Transport Quote",
+      "ctaSubtitle": "Contact us now for free consultation and the best quote for your shipment."
+    },
+    "customs": {
+      "heroTitle": "Customs Declaration",
+      "heroSubtitle": "Fast — Accurate — Legally Compliant",
+      "overviewP1": "Customs declaration is a critical step in the import-export process. Accurate and timely declaration helps businesses avoid legal risks, minimize additional costs, and ensure swift customs clearance.",
+      "overviewP2": "With an experienced customs expert team, HACO Logistics provides comprehensive customs declaration services, from HS code classification, tax policy determination to completing customs clearance procedures. We are committed to providing absolute peace of mind for all your shipments.",
+      "h1Title": "Fast",
+      "h1Desc": "Electronic declaration via VNACCS/VCIS system, processing declarations in the shortest time, reducing customs clearance time.",
+      "h2Title": "Accurate",
+      "h2Desc": "Correct HS code classification, accurate tax policy determination, avoiding additional costs and legal risks.",
+      "h3Title": "Professional",
+      "h3Desc": "Certified customs declarants with deep knowledge of import-export tax schedules and customs regulations.",
+      "h4Title": "Comprehensive",
+      "h4Desc": "End-to-end support: document receipt, cargo classification, declaration, physical inspection, and cargo release.",
+      "ctaTitle": "Request Customs Consultation",
+      "ctaSubtitle": "Contact us now for free consultation and the fastest, most accurate customs support."
+    }
+  }
+}
