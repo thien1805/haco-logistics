@@ -30,19 +30,19 @@ export default function CustomsPage({ params }: { params: { locale: string } }) 
     {
       title: t('seaTitle'),
       desc: t('seaCarousel'),
-      image: '/images/sea-freight.jpg',
+      image: '/images/duongbien.jpg',
       href: lp('/dich-vu/van-tai-duong-bien'),
     },
     {
       title: t('airTitle'),
       desc: t('airCarousel'),
-      image: '/images/air-freight.jpg',
+      image: '/images/duongbay.jpg',
       href: lp('/dich-vu/van-tai-hang-khong'),
     },
     {
       title: t('roadTitle'),
       desc: t('roadCarousel'),
-      image: '/images/road-freight.jpg',
+      image: '/images/duongbo.png',
       href: lp('/dich-vu/van-tai-duong-bo'),
     },
   ];
@@ -54,7 +54,7 @@ export default function CustomsPage({ params }: { params: { locale: string } }) 
         {/* Hero */}
         <section
           className="relative h-72 md:h-[420px] bg-cover bg-center flex items-end text-white"
-          style={{ backgroundImage: "url('/images/customs.jpg')" }}
+          style={{ backgroundImage: "url('/images/khaibaohaiquan.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-t from-[#1B2A6B]/80 via-[#1B2A6B]/30 to-transparent" />
           <div className="relative z-10 px-8 md:px-16 pb-10 md:pb-16">
@@ -78,7 +78,7 @@ export default function CustomsPage({ params }: { params: { locale: string } }) 
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <div
                 className="w-full h-80 bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/customs.jpg')" }}
+                style={{ backgroundImage: "url('/images/khaibaohaiquan.jpg')" }}
               />
             </div>
           </div>

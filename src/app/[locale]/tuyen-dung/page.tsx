@@ -1,35 +1,35 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const jobs = [
-  {
-    title: 'Nhân viên Kinh doanh Logistics',
-    dept: 'Kinh doanh',
-    type: 'Toàn thời gian',
-    location: 'TP. Hồ Chí Minh',
-    deadline: '31/07/2025',
-    desc: 'Tìm kiếm, phát triển và duy trì quan hệ khách hàng doanh nghiệp. Tư vấn và bán các giải pháp vận tải đường biển, hàng không và đường bộ.',
-    reqs: ['Tốt nghiệp Đại học các ngành Kinh tế, Ngoại thương, Logistics', 'Kinh nghiệm ít nhất 1 năm trong lĩnh vực Logistics / Freight Forwarding', 'Kỹ năng giao tiếp, thương lượng tốt', 'Tiếng Anh giao tiếp'],
-  },
-  {
-    title: 'Nhân viên Chứng từ Xuất nhập khẩu',
-    dept: 'Vận hành',
-    type: 'Toàn thời gian',
-    location: 'TP. Hồ Chí Minh',
-    deadline: '31/07/2025',
-    desc: 'Xử lý toàn bộ chứng từ xuất nhập khẩu: B/L, C/O, CO, packing list, invoice. Liên hệ với hãng tàu, hãng hàng không và các cơ quan chức năng.',
-    reqs: ['Am hiểu nghiệp vụ ngoại thương và chứng từ xuất nhập khẩu', 'Thành thạo Microsoft Office', 'Cẩn thận, chi tiết, chịu áp lực cao', 'Tiếng Anh đọc hiểu tốt'],
-  },
-  {
-    title: 'Khai báo viên Hải quan',
-    dept: 'Hải quan',
-    type: 'Toàn thời gian',
-    location: 'TP. Hồ Chí Minh',
-    deadline: '15/08/2025',
-    desc: 'Thực hiện khai báo điện tử qua hệ thống VNACCS/VCIS, phân loại hàng hóa và xác định mã HS. Phối hợp với Chi cục Hải quan để giải quyết vướng mắc.',
-    reqs: ['Có chứng chỉ Đại lý Hải quan hoặc Khai báo viên', 'Kinh nghiệm tối thiểu 2 năm khai báo hàng xuất/nhập', 'Am hiểu biểu thuế XNK và chính sách thuế cập nhật', 'Tỉ mỉ, chính xác trong xử lý hồ sơ'],
-  },
-];
+// const jobs = [
+//   {
+//     title: 'Nhân viên Kinh doanh Logistics',
+//     dept: 'Kinh doanh',
+//     type: 'Toàn thời gian',
+//     location: 'TP. Hồ Chí Minh',
+//     deadline: '31/07/2025',
+//     desc: 'Tìm kiếm, phát triển và duy trì quan hệ khách hàng doanh nghiệp. Tư vấn và bán các giải pháp vận tải đường biển, hàng không và đường bộ.',
+//     reqs: ['Tốt nghiệp Đại học các ngành Kinh tế, Ngoại thương, Logistics', 'Kinh nghiệm ít nhất 1 năm trong lĩnh vực Logistics / Freight Forwarding', 'Kỹ năng giao tiếp, thương lượng tốt', 'Tiếng Anh giao tiếp'],
+//   },
+//   {
+//     title: 'Nhân viên Chứng từ Xuất nhập khẩu',
+//     dept: 'Vận hành',
+//     type: 'Toàn thời gian',
+//     location: 'TP. Hồ Chí Minh',
+//     deadline: '31/07/2025',
+//     desc: 'Xử lý toàn bộ chứng từ xuất nhập khẩu: B/L, C/O, CO, packing list, invoice. Liên hệ với hãng tàu, hãng hàng không và các cơ quan chức năng.',
+//     reqs: ['Am hiểu nghiệp vụ ngoại thương và chứng từ xuất nhập khẩu', 'Thành thạo Microsoft Office', 'Cẩn thận, chi tiết, chịu áp lực cao', 'Tiếng Anh đọc hiểu tốt'],
+//   },
+//   {
+//     title: 'Khai báo viên Hải quan',
+//     dept: 'Hải quan',
+//     type: 'Toàn thời gian',
+//     location: 'TP. Hồ Chí Minh',
+//     deadline: '15/08/2025',
+//     desc: 'Thực hiện khai báo điện tử qua hệ thống VNACCS/VCIS, phân loại hàng hóa và xác định mã HS. Phối hợp với Chi cục Hải quan để giải quyết vướng mắc.',
+//     reqs: ['Có chứng chỉ Đại lý Hải quan hoặc Khai báo viên', 'Kinh nghiệm tối thiểu 2 năm khai báo hàng xuất/nhập', 'Am hiểu biểu thuế XNK và chính sách thuế cập nhật', 'Tỉ mỉ, chính xác trong xử lý hồ sơ'],
+//   },
+// ];
 
 export default function CareersPage() {
   return (
@@ -52,12 +52,11 @@ export default function CareersPage() {
             <h2 className="text-2xl font-bold text-[#1B2A6B] text-center mb-10">Tại sao làm việc tại HACO?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { icon: '🚀', title: 'Môi trường phát triển', desc: 'Cơ hội thăng tiến rõ ràng, đào tạo liên tục và tiếp xúc với nghiệp vụ logistics quốc tế đỉnh cao.' },
-                { icon: '💼', title: 'Đãi ngộ cạnh tranh', desc: 'Lương thưởng hấp dẫn, BHXH đầy đủ, thưởng KPI theo kết quả kinh doanh.' },
-                { icon: '🌍', title: 'Môi trường quốc tế', desc: 'Làm việc với đối tác và khách hàng từ hơn 50 quốc gia, nâng cao kinh nghiệm và ngoại ngữ.' },
+                { title: 'Môi trường phát triển', desc: 'Cơ hội thăng tiến rõ ràng, đào tạo liên tục và tiếp xúc với nghiệp vụ logistics quốc tế đỉnh cao.' },
+                { title: 'Đãi ngộ cạnh tranh', desc: 'Lương thưởng hấp dẫn, BHXH đầy đủ, thưởng KPI theo kết quả kinh doanh.' },
+                { title: 'Môi trường quốc tế', desc: 'Làm việc với đối tác và khách hàng từ hơn 50 quốc gia, nâng cao kinh nghiệm và ngoại ngữ.' },
               ].map((v) => (
                 <div key={v.title} className="bg-white rounded-xl p-7 text-center shadow-sm">
-                  <span className="text-4xl block mb-4">{v.icon}</span>
                   <h3 className="font-bold text-[#1B2A6B] mb-3">{v.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{v.desc}</p>
                 </div>
@@ -71,7 +70,7 @@ export default function CareersPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#1B2A6B] mb-8">Vị trí đang tuyển</h2>
             <div className="space-y-8">
-              {jobs.map((job) => (
+              {/* {jobs.map((job) => (
                 <div key={job.title} className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
                   <div className="bg-[#1B2A6B] px-6 py-4 flex flex-wrap items-start justify-between gap-3">
                     <div>
@@ -103,12 +102,12 @@ export default function CareersPage() {
                     </a>
                   </div>
                 </div>
-              ))}
+              ))} */}
             </div>
           </div>
         </section>
 
-        {/* CTA */}
+        {/* CTA
         <section className="py-12 px-4 bg-gray-50 text-center border-t">
           <p className="text-gray-600 mb-2">Không tìm thấy vị trí phù hợp? Gửi hồ sơ ứng viên tiềm năng cho chúng tôi.</p>
           <a
@@ -117,7 +116,7 @@ export default function CareersPage() {
           >
             hr@haco-logistics.com
           </a>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>

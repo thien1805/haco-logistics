@@ -1,31 +1,33 @@
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useTranslations } from 'next-intl';
 
 export default function AboutPage() {
   const t = useTranslations('aboutPage');
+  const ts = useTranslations('services');
 
-  const servicesFromLocale = t.raw('services') as Array<{ title: string; desc: string }>;
   const services = [
     {
       icon: <i className="fas fa-ship text-6xl" style={{ color: '#1B2A6B' }}></i>,
-      title: servicesFromLocale[0]?.title ?? '',
-      desc: servicesFromLocale[0]?.desc ?? '',
+      title: ts('sea.title'),
+      desc: ts('sea.description'),
     },
     {
       icon: <i className="fas fa-plane text-6xl" style={{ color: '#1B2A6B' }}></i>,
-      title: servicesFromLocale[1]?.title ?? '',
-      desc: servicesFromLocale[1]?.desc ?? '',
+      title: ts('air.title'),
+      desc: ts('air.description'),
     },
     {
       icon: <i className="fas fa-truck text-6xl" style={{ color: '#1B2A6B' }}></i>,
-      title: servicesFromLocale[2]?.title ?? '',
-      desc: servicesFromLocale[2]?.desc ?? '',
+      title: ts('road.title'),
+      desc: ts('road.description'),
     },
     {
       icon: <i className="fas fa-file-invoice text-6xl" style={{ color: '#1B2A6B' }}></i>,
-      title: servicesFromLocale[3]?.title ?? '',
-      desc: servicesFromLocale[3]?.desc ?? '',
+      title: ts('customs.title'),
+      desc: ts('customs.description'),
     },
   ];
 

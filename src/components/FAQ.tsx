@@ -8,8 +8,16 @@ export default function FAQ() {
   const t = useTranslations('faq');
   const items = t.raw('items') as Array<{ question: string; answer: string }>;
 
-  const [openLeft, setOpenLeft] = useState<number | null>(null);
-  const [openRight, setOpenRight] = useState<number | null>(null);
+  const [openLeft, setOpenLeft] = useState<number[]>([]);
+  const [openRight, setOpenRight] = useState<number[]>([]);
+
+  const toggleLeft = (index: number) => {
+    setOpenLeft((prev) => (prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]));
+  };
+
+  const toggleRight = (index: number) => {
+    setOpenRight((prev) => (prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]));
+  };
 
   const leftItems = items.slice(0, 4);
   const rightItems = items.slice(4);
@@ -30,23 +38,23 @@ export default function FAQ() {
                 <div key={index}>
                   <button
                     className="w-full flex items-start justify-between py-5 text-left gap-4 px-5 hover:bg-gray-50 transition-colors"
-                    onClick={() => setOpenLeft(openLeft === index ? null : index)}
+                    onClick={() => toggleLeft(index)}
                   >
                     <span
                       className={`text-sm font-medium leading-snug ${
-                        openLeft === index ? 'text-[#1B7DC4]' : 'text-gray-800'
+                        openLeft.includes(index) ? 'text-[#1B7DC4]' : 'text-gray-800'
                       }`}
                     >
                       {index + 1}. {item.question}
                     </span>
                     <ChevronDownIcon
                       className={`w-5 h-5 flex-shrink-0 text-gray-500 transition-transform ${
-                        openLeft === index ? 'rotate-180' : ''
+                        openLeft.includes(index) ? 'rotate-180' : ''
                       }`}
                     />
                   </button>
-                  {openLeft === index && (
-                    <div className="pb-5 px-5 text-sm text-gray-600 leading-relaxed border-t border-gray-200 bg-gray-50">
+                  {openLeft.includes(index) && (
+                    <div className="pb-5 px-5 text-sm text-gray-600 leading-relaxed whitespace-pre-line border-t border-gray-200 bg-gray-50">
                       {item.answer}
                     </div>
                   )}
@@ -59,23 +67,23 @@ export default function FAQ() {
                 <div key={index}>
                   <button
                     className="w-full flex items-start justify-between py-5 text-left gap-4 px-5 hover:bg-gray-50 transition-colors"
-                    onClick={() => setOpenRight(openRight === index ? null : index)}
+                    onClick={() => toggleRight(index)}
                   >
                     <span
                       className={`text-sm font-medium leading-snug ${
-                        openRight === index ? 'text-[#1B7DC4]' : 'text-gray-800'
+                        openRight.includes(index) ? 'text-[#1B7DC4]' : 'text-gray-800'
                       }`}
                     >
                       {index + 5}. {item.question}
                     </span>
                     <ChevronDownIcon
                       className={`w-5 h-5 flex-shrink-0 text-gray-500 transition-transform ${
-                        openRight === index ? 'rotate-180' : ''
+                        openRight.includes(index) ? 'rotate-180' : ''
                       }`}
                     />
                   </button>
-                  {openRight === index && (
-                    <div className="pb-5 px-5 text-sm text-gray-600 leading-relaxed border-t border-gray-200 bg-gray-50">
+                  {openRight.includes(index) && (
+                    <div className="pb-5 px-5 text-sm text-gray-600 leading-relaxed whitespace-pre-line border-t border-gray-200 bg-gray-50">
                       {item.answer}
                     </div>
                   )}

@@ -23,6 +23,9 @@ interface FormData {
   notes: string;
 }
 
+type Step1Field = 'fullName' | 'email' | 'phone';
+type Step1Errors = Record<Step1Field, string>;
+
 const TOTAL_STEPS = 4;
 
 export default function QuoteForm() {
@@ -31,6 +34,11 @@ export default function QuoteForm() {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
+  const [step1Errors, setStep1Errors] = useState<Step1Errors>({
+    fullName: '',
+    email: '',
+    phone: '',
+  });
 
   const [formData, setFormData] = useState<FormData>({
     fullName: '',
@@ -51,12 +59,56 @@ export default function QuoteForm() {
 
   const update = (field: keyof FormData, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
+
+    if (field === 'fullName' || field === 'email' || field === 'phone') {
+      setStep1Errors((prev) => ({ ...prev, [field]: '' }));
+    }
   };
 
-  const handleNext = () => setStep((s) => Math.min(s + 1, TOTAL_STEPS));
+  const isValidEmail = (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i.test(value.trim());
+
+  const isValidPhone = (value: string) => {
+    const trimmed = value.trim();
+    const basicPattern = /^\+?[0-9][0-9\s().-]{7,17}$/;
+    const digitCount = trimmed.replace(/\D/g, '').length;
+    return basicPattern.test(trimmed) && digitCount >= 8 && digitCount <= 15;
+  };
+
+  const validateStep1 = () => {
+    const nextErrors: Step1Errors = {
+      fullName: !formData.fullName.trim()
+        ? t('validation.fullNameRequired')
+        : formData.fullName.trim().length < 2
+        ? t('validation.fullNameInvalid')
+        : '',
+      email: !formData.email.trim()
+        ? t('validation.emailRequired')
+        : !isValidEmail(formData.email)
+        ? t('validation.emailInvalid')
+        : '',
+      phone: !formData.phone.trim()
+        ? t('validation.phoneRequired')
+        : !isValidPhone(formData.phone)
+        ? t('validation.phoneInvalid')
+        : '',
+    };
+
+    setStep1Errors(nextErrors);
+    return Object.values(nextErrors).every((v) => !v);
+  };
+
+  const handleNext = () => {
+    if (step === 1 && !validateStep1()) return;
+    setStep((s) => Math.min(s + 1, TOTAL_STEPS));
+  };
   const handleBack = () => setStep((s) => Math.max(s - 1, 1));
 
   const handleSubmit = async () => {
+    if (!validateStep1()) {
+      setStep(1);
+      return;
+    }
+
     setLoading(true);
     setError('');
     try {
@@ -76,6 +128,7 @@ export default function QuoteForm() {
 
   const inputClass =
     'w-full border border-gray-300 rounded px-4 py-3 text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1B7DC4] focus:border-transparent transition';
+  const invalidInputClass = 'border-red-500 focus:ring-red-500';
 
   const labelClass = 'block text-sm font-medium text-gray-700 mb-1';
 
@@ -83,7 +136,6 @@ export default function QuoteForm() {
     { value: 'sea', label: t('step2.seaFreight') },
     { value: 'air', label: t('step2.airFreight') },
     { value: 'road', label: t('step2.roadFreight') },
-    { value: 'customs', label: t('step2.customs') },
   ];
 
   return (
@@ -144,11 +196,14 @@ export default function QuoteForm() {
                   <label className={labelClass}>{t('step1.fullName')}</label>
                   <input
                     type="text"
-                    className={inputClass}
+                    required
+                    minLength={2}
+                    className={`${inputClass} ${step1Errors.fullName ? invalidInputClass : ''}`}
                     placeholder={t('step1.fullNamePlaceholder')}
                     value={formData.fullName}
                     onChange={(e) => update('fullName', e.target.value)}
                   />
+                  {step1Errors.fullName && <p className="mt-1 text-sm text-red-600">{step1Errors.fullName}</p>}
                 </div>
                 <div>
                   <label className={labelClass}>{t('step1.jobTitle')}</label>
@@ -174,21 +229,26 @@ export default function QuoteForm() {
                   <label className={labelClass}>{t('step1.email')}</label>
                   <input
                     type="email"
-                    className={inputClass}
+                    required
+                    className={`${inputClass} ${step1Errors.email ? invalidInputClass : ''}`}
                     placeholder={t('step1.emailPlaceholder')}
                     value={formData.email}
                     onChange={(e) => update('email', e.target.value)}
                   />
+                  {step1Errors.email && <p className="mt-1 text-sm text-red-600">{step1Errors.email}</p>}
                 </div>
                 <div>
                   <label className={labelClass}>{t('step1.phone')}</label>
                   <input
                     type="tel"
-                    className={inputClass}
+                    required
+                    inputMode="tel"
+                    className={`${inputClass} ${step1Errors.phone ? invalidInputClass : ''}`}
                     placeholder={t('step1.phonePlaceholder')}
                     value={formData.phone}
                     onChange={(e) => update('phone', e.target.value)}
                   />
+                  {step1Errors.phone && <p className="mt-1 text-sm text-red-600">{step1Errors.phone}</p>}
                 </div>
               </div>
             )}

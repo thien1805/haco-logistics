@@ -114,35 +114,35 @@
     "items": [
       {
         "question": "What Documents Are Required for Sea Export Procedures?",
-        "answer": "The specific documents required for sea export procedures may vary depending on the destination country, type of goods being exported, and local regulations. However, some common documents include: Commercial invoice, Packing list, Bill of Lading, Certificate of Origin, Export license (if required), Phytosanitary certificate (for agricultural products), Other certificates or licenses as required by the importing country."
+        "answer": "The specific documents required for sea export procedures may vary depending on the destination country, type of goods being exported, and local regulations. However, common documents include:\n\n- Commercial invoice\n- Packing list\n- Bill of Lading\n- Certificate of Origin\n- Export license (if required)\n- Phytosanitary certificate (for agricultural products)\n- Other certificates or permits as required by the importing country"
       },
       {
         "question": "What Documents Are Required for Air Export Procedures?",
-        "answer": "To export goods by air, you need to prepare: Commercial invoice, Packing list, Airway Bill (AWB), Certificate of Origin, Export license (if required), Dangerous goods documents (if applicable), Aviation security certificate."
+        "answer": "The specific documents required for air export procedures may vary depending on the destination country, type of goods being exported, and local regulations. However, common documents include:\n\n- Commercial invoice\n- Packing list\n- Airway Bill (AWB)\n- Certificate of Origin\n- Export license\n- Other certificates or permits: Depending on cargo type and destination country, additional documents may be required, such as a health certificate for food products or a safety certificate for hazardous materials."
       },
       {
         "question": "What Documents Are Required for Sea Import Procedures?",
-        "answer": "To import goods by sea, you need: Commercial invoice, Bill of Lading, Packing List, Certificate of Origin (C/O), Import license (for conditional goods), Packing slip, Import customs declaration."
+        "answer": "The specific documents required for sea import procedures may vary depending on the country of origin, cargo type, and local regulations. However, common documents include:\n\n- Commercial invoice\n- Packing list\n- Bill of Lading\n- Import permit or license\n- Customs declaration\n- Certificate of Origin\n- Other certificates or permits"
       },
       {
         "question": "What Documents Are Needed to Apply for an Import/Export License?",
-        "answer": "The application for an import/export license typically includes: Application form, Copy of business registration certificate, Foreign trade contract, Commercial invoice, Product technical documents (if required), Other documents as required for each type of goods."
+        "answer": "CONDITIONS\n\n1. First: Import/export goods must have a permit. The law requires that permit-controlled goods must be licensed by the relevant Ministry. In addition, your goods must not be in the prohibited or temporarily suspended import/export list.\n\n2. Second: Applicant eligibility. Entities that may apply for import permits include:\n- Vietnamese enterprises without foreign-invested capital from foreign companies or organizations.\n- Foreign-invested enterprises, branches, or foreign companies in Vietnam must comply with Vietnam's import/export regulations and the roadmap announced by the Ministry of Industry and Trade when applying for permits.\n\nIMPORT/EXPORT LICENSE APPLICATION DOSSIER includes:\n\n- Business registration certificate\n- Certificate of origin for exported/imported goods\n- Commercial invoices related to product transactions\n- Freight invoice\n- Payment confirmation\n- Commercial contracts for the supply of goods between parties in a transaction"
       },
       {
         "question": "What Is Commercial Cargo?",
-        "answer": "Commercial cargo refers to products bought and sold for business purposes, with economic value and circulated in the market. These are goods transported in large quantities, with complete invoices and documents, and require customs procedures for import and export."
+        "answer": "Commercial cargo refers to goods bought and sold for business purposes, with economic value and circulation in the market.\n\nExamples:\n\n- Manufactured products: electronics, garments, furniture, automobiles\n- Raw materials: minerals, agricultural products, timber\n- Semi-finished goods: components, parts\n- Food and beverages\n- Machinery and equipment"
       },
       {
         "question": "What Is Non-Commercial Cargo?",
-        "answer": "Non-commercial cargo refers to products not intended for business purposes, typically gifts, personal belongings, or samples with no commercial value. This type of goods is usually exempt from taxes or subject to preferential tax rates upon import, depending on each country's regulations."
+        "answer": "Non-commercial cargo refers to goods not intended for sale or exchange. They are usually imported or exported for personal use, gifts, or other non-profit purposes.\n\nExamples:\n\n- Personal belongings: clothing, electronics, household goods\n- Gifts: items sent to individuals or organizations\n- Donations: items contributed to charities or non-profit organizations\n- Samples: product samples for testing or evaluation\n\nUnlike commercial goods, non-commercial cargo is often exempt from import/export duties. However, specific regulations and restrictions may still apply depending on the country and the nature of the goods."
       },
       {
         "question": "What Documents Are Needed to Apply for a C/O (Certificate of Origin)?",
-        "answer": "To apply for a Certificate of Origin (C/O), businesses need to prepare: C/O application form, Commercial invoice, Packing list, Export customs declaration, Business registration certificate, Evidence of raw material origin, Manufacturing process (if required)."
+        "answer": "- Commercial Invoice + Packing list\n- Input raw material purchase invoices\n- Manufacturing process\n- Raw material consumption norm per product\n- Local authority confirmation of product origin\n- Trader profile/documents"
       },
       {
         "question": "What Are the Steps in the Fumigation Process for Export Goods?",
-        "answer": "The fumigation process for export goods includes: (1) Inspect and prepare goods, (2) Move goods to fumigation area, (3) Perform fumigation using Methyl Bromide or Phosphine gas, (4) Check that gas concentration meets requirements, (5) Ventilate after fumigation, (6) Inspect and issue fumigation certificate, (7) Affix fumigation stamps/labels to the shipment."
+        "answer": "Export cargo fumigation is a common measure using chemicals to treat insects and parasitic organisms on goods with paper/wood packaging, wooden pallets, or wooden crates. This method helps clean goods, prevents contamination during international transit, and limits the spread of microorganisms between countries.\n\nFumigation documents are issued after quarantine and medical disinfection authorities complete treatment with plant protection chemicals. Using fumigation certification not only protects cargo but also helps eliminate bacteria and termites in vessel compartments for sea transport. Bromide is the main chemical used in this process.\n\nGoods that may require a fumigation certificate (subject to importer requirements).\n\nThe 3-step process includes:\n\n- Step 1: Submit fumigation request\n  - Fumigation location address\n  - Execution time\n  - Cargo type\n  - Importing country\n  - Cargo volume/weight\n\n- Step 2: Carry out fumigation\n  - Spray fumigation chemicals at port or designated location\n  - Store cargo to allow treatment effectiveness\n\n- Step 3: Complete fumigation process\n  - Provide required information to issue the fumigation certificate\n  - Review and confirm draft certificate\n  - Receive certificate, make payment, and send certificate to customer\n\nFumigation plays an important role in protecting cargo and the supply chain, ensuring export transportation is safe and compliant with international requirements."
       }
     ]
   },
@@ -209,6 +209,14 @@
         "readyDate": "Ready Date",
         "notes": "Notes"
       }
+    },
+    "validation": {
+      "fullNameRequired": "Please enter your full name",
+      "fullNameInvalid": "Full name must be at least 2 characters",
+      "emailRequired": "Please enter your email",
+      "emailInvalid": "Invalid email format",
+      "phoneRequired": "Please enter your phone number",
+      "phoneInvalid": "Invalid phone number format"
     },
     "next": "Next",
     "back": "Back",
