@@ -313,20 +313,20 @@ export default function QuoteForm() {
                 <h3 className="font-semibold text-[#1B2A6B] text-base mb-4">{t('step4.title')}</h3>
                 <div className="bg-gray-50 rounded-lg p-5 space-y-2">
                   {[
-                    ['Họ tên / Full Name', formData.fullName],
-                    ['Chức danh / Job Title', formData.jobTitle],
-                    ['Công ty / Company', formData.company],
-                    ['Email', formData.email],
-                    ['Điện thoại / Phone', formData.phone],
-                    ['Dịch vụ / Service', formData.serviceType],
-                    ['Xuất phát / Origin', formData.origin],
-                    ['Điểm đến / Destination', formData.destination],
-                    ['Loại hàng / Cargo', formData.cargoType],
-                    ['Trọng lượng / Weight', formData.weight ? `${formData.weight} kg` : '—'],
-                    ['Thể tích / Volume', formData.volume ? `${formData.volume} CBM` : '—'],
-                    ['Số kiện / Packages', formData.quantity || '—'],
-                    ['Ngày sẵn hàng / Ready Date', formData.readyDate || '—'],
-                    ['Ghi chú / Notes', formData.notes || '—'],
+                    [t('step4.review.fullName'), formData.fullName],
+                    [t('step4.review.jobTitle'), formData.jobTitle],
+                    [t('step4.review.company'), formData.company],
+                    [t('step4.review.email'), formData.email],
+                    [t('step4.review.phone'), formData.phone],
+                    [t('step4.review.serviceType'), serviceOptions.find((opt) => opt.value === formData.serviceType)?.label ?? '—'],
+                    [t('step4.review.origin'), formData.origin],
+                    [t('step4.review.destination'), formData.destination],
+                    [t('step4.review.cargoType'), formData.cargoType],
+                    [t('step4.review.weight'), formData.weight ? `${formData.weight} kg` : '—'],
+                    [t('step4.review.volume'), formData.volume ? `${formData.volume} CBM` : '—'],
+                    [t('step4.review.quantity'), formData.quantity || '—'],
+                    [t('step4.review.readyDate'), formData.readyDate || '—'],
+                    [t('step4.review.notes'), formData.notes || '—'],
                   ].map(([label, value]) => (
                     <div key={label} className="flex gap-2">
                       <span className="text-gray-500 min-w-[180px] shrink-0">{label}:</span>

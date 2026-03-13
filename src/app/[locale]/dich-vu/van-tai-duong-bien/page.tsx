@@ -30,19 +30,19 @@ export default function SeaFreightPage({ params }: { params: { locale: string } 
     {
       title: t('roadTitle'),
       desc: t('roadCarousel'),
-      image: '/images/road-freight.jpg',
+      image: '/images/duongbo.png',
       href: lp('/dich-vu/van-tai-duong-bo'),
     },
     {
       title: t('airTitle'),
       desc: t('airCarousel'),
-      image: '/images/air-freight.jpg',
+      image: '/images/duongbay.jpg',
       href: lp('/dich-vu/van-tai-hang-khong'),
     },
     {
       title: t('customsTitle'),
       desc: t('customsCarousel'),
-      image: '/images/customs.jpg',
+      image: '/images/khaibaohaiquan.jpg',
       href: lp('/dich-vu/khai-bao-hai-quan'),
     },
   ];
@@ -50,11 +50,11 @@ export default function SeaFreightPage({ params }: { params: { locale: string } 
   return (
     <>
       <Header />
-      <main>
+      <main> 
         {/* Hero */}
         <section
           className="relative h-72 md:h-[420px] bg-cover bg-center flex items-end text-white"
-          style={{ backgroundImage: "url('/images/sea-freight.jpg')" }}
+          style={{ backgroundImage: "url('/images/duongbien.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-t from-[#1B2A6B]/80 via-[#1B2A6B]/30 to-transparent" />
           <div className="relative z-10 px-8 md:px-16 pb-10 md:pb-16">
@@ -78,7 +78,7 @@ export default function SeaFreightPage({ params }: { params: { locale: string } 
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <div
                 className="w-full h-80 bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/sea-freight2.jpg')" }}
+                style={{ backgroundImage: "url('/images/duongbien.jpg')" }}
               />
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function SeaFreightPage({ params }: { params: { locale: string } 
         {/* Other services - Carousel */}
         <section className="py-16 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#1B2A6B] text-center mb-10">{t('otherSolutions')}</h2>
+            <h2 className="text-5xl font-bold text-[#1B2A6B] text-center mb-10">{t('otherSolutions')}</h2>
           </div>
 
             <div className="relative max-w-7xl mx-auto">

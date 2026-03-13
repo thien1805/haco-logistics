@@ -34,6 +34,81 @@
       "description": "Giúp đơn giản hóa mọi thủ tục phức tạp. Đội ngũ chuyên gia của chúng tôi sẽ hỗ trợ bạn hoàn tất các quy trình khai báo hải quan một cách nhanh chóng, chính xác, đảm bảo lô hàng được thông quan suôn sẻ, tránh mọi rủi ro và chậm trễ không đáng có."
     }
   },
+  "aboutPage": {
+    "heroTitle": "Về HACO Logistics",
+    "introTitle": "Giới thiệu",
+    "introP1": "Chào mừng bạn đến với HACO Logistics, đơn vị cung cấp giải pháp logistics quốc tế toàn diện và hiệu quả. Với sứ mệnh kết nối doanh nghiệp Việt Nam ra thế giới và đưa sản phẩm toàn cầu đến gần hơn với thị trường trong nước, chúng tôi tự hào là đối tác tin cậy, bảo chứng an tâm cho mọi lô hàng.",
+    "introP2": "Chúng tôi thiết kế các dịch vụ linh hoạt, đa dạng để giải quyết mọi nhu cầu vận tải phức tạp nhất:",
+    "highlights": [
+      "Vận tải đường biển",
+      "Vận tải đường hàng không",
+      "Vận tải đường bộ nội địa",
+      "Dịch vụ khai báo hải quan"
+    ],
+    "services": [
+      {
+        "title": "Vận tải đường biển",
+        "desc": "Kết nối toàn cầu qua mạng lưới cảng biển quốc tế, đảm bảo hàng hóa được vận chuyển an toàn, đúng hẹn với chi phí tối ưu."
+      },
+      {
+        "title": "Vận tải đường hàng không",
+        "desc": "Dịch vụ nhanh chóng, đáng tin cậy đến mọi điểm trên thế giới — lựa chọn tối ưu khi thời gian là yếu tố then chốt."
+      },
+      {
+        "title": "Vận tải nội địa",
+        "desc": "Mạng lưới đường bộ toàn quốc, giao hàng door-to-door từ cảng biển, sân bay đến kho của bạn."
+      },
+      {
+        "title": "Khai báo hải quan",
+        "desc": "Đội ngũ khai báo viên kinh nghiệm, hoàn tất thủ tục nhanh chóng, chính xác, hạn chế tối đa rủi ro và chậm trễ."
+      }
+    ]
+  },
+  "contactPage": {
+    "heroTitle": "Liên hệ với chúng tôi",
+    "heroSubtitle": "Đội ngũ HACO sẵn sàng hỗ trợ 24/7",
+    "infoTitle": "Thông tin liên hệ",
+    "socialTitle": "Mạng xã hội",
+    "facebookCta": "Facebook",
+    "formTitle": "Gửi tin nhắn",
+    "form": {
+      "fullName": "Họ và tên *",
+      "fullNamePlaceholder": "Nguyễn Văn A",
+      "phone": "Số điện thoại *",
+      "phonePlaceholder": "0901 234 567",
+      "email": "Email *",
+      "emailPlaceholder": "email@company.com",
+      "message": "Nội dung",
+      "messagePlaceholder": "Mô tả yêu cầu của bạn...",
+      "submit": "Gửi tin nhắn"
+    },
+    "info": {
+      "address": {
+        "label": "Địa chỉ",
+        "value": "35J3M Đường DD7-1, Phường Đông Hưng Thuận, Quận 12, TP. Hồ Chí Minh"
+      },
+      "phone": {
+        "label": "Điện thoại",
+        "value": "(+84) 28 3620 7045"
+      },
+      "hotline": {
+        "label": "Hotline",
+        "value": "(+84) 901 234 567"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@haco-logistics.com"
+      },
+      "hours": {
+        "label": "Giờ làm việc",
+        "value": "Thứ Hai – Thứ Sáu: 8:00 – 17:30\nThứ Bảy: 8:00 – 12:00"
+      }
+    },
+    "map": {
+      "title": "Bản đồ HACO Logistics",
+      "cta": "Xem bản đồ lớn hơn →"
+    }
+  },
   "faq": {
     "title": "FAQ",
     "items": [
@@ -117,7 +192,23 @@
       "title": "Xác nhận thông tin",
       "confirm": "Xác nhận và gửi",
       "success": "Cảm ơn bạn! Chúng tôi sẽ liên hệ trong vòng 24 giờ.",
-      "error": "Có lỗi xảy ra, vui lòng thử lại."
+      "error": "Có lỗi xảy ra, vui lòng thử lại.",
+      "review": {
+        "fullName": "Họ và tên",
+        "jobTitle": "Chức danh",
+        "company": "Công ty",
+        "email": "Email",
+        "phone": "Điện thoại",
+        "serviceType": "Loại dịch vụ",
+        "origin": "Xuất phát",
+        "destination": "Điểm đến",
+        "cargoType": "Loại hàng hóa",
+        "weight": "Trọng lượng",
+        "volume": "Thể tích",
+        "quantity": "Số lượng kiện",
+        "readyDate": "Ngày sẵn hàng",
+        "notes": "Ghi chú"
+      }
     },
     "next": "Tiếp Theo",
     "back": "Quay Lại",

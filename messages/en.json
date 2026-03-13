@@ -34,6 +34,81 @@
       "description": "We simplify all complex procedures. Our team of experts will help you complete customs declaration processes quickly and accurately, ensuring smooth customs clearance and avoiding unnecessary risks and delays."
     }
   },
+  "aboutPage": {
+    "heroTitle": "About HACO Logistics",
+    "introTitle": "Who We Are",
+    "introP1": "Welcome to HACO Logistics, a leading international logistics provider delivering end-to-end, efficient supply chain solutions. With a mission to connect Vietnamese businesses to the world and bring global products closer to the local market, we are a trusted partner who secures every shipment with care.",
+    "introP2": "We design flexible, diverse services tailored to solve even the most complex transportation needs:",
+    "highlights": [
+      "Sea freight",
+      "Air freight",
+      "Domestic road transport",
+      "Customs declaration services"
+    ],
+    "services": [
+      {
+        "title": "Sea Freight",
+        "desc": "Global connections through an international port network, ensuring cargo moves safely and on schedule at optimized cost."
+      },
+      {
+        "title": "Air Freight",
+        "desc": "Fast and reliable air services to every destination worldwide — the perfect choice when time is critical."
+      },
+      {
+        "title": "Domestic Transport",
+        "desc": "Nationwide road network delivering door-to-door from ports and airports straight to your warehouse."
+      },
+      {
+        "title": "Customs Declaration",
+        "desc": "Experienced customs specialists who complete procedures quickly and accurately, minimizing risk and delays."
+      }
+    ]
+  },
+  "contactPage": {
+    "heroTitle": "Contact Us",
+    "heroSubtitle": "The HACO team is ready to support you 24/7",
+    "infoTitle": "Contact Information",
+    "socialTitle": "Social",
+    "facebookCta": "Facebook",
+    "formTitle": "Send a Message",
+    "form": {
+      "fullName": "Full Name *",
+      "fullNamePlaceholder": "Your name",
+      "phone": "Phone *",
+      "phonePlaceholder": "+84 901 234 567",
+      "email": "Email *",
+      "emailPlaceholder": "email@company.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help...",
+      "submit": "Send Message"
+    },
+    "info": {
+      "address": {
+        "label": "Address",
+        "value": "35J3M DD7-1 Street, Dong Hung Thuan Ward, District 12, Ho Chi Minh City"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "(+84) 28 3620 7045"
+      },
+      "hotline": {
+        "label": "Hotline",
+        "value": "(+84) 901 234 567"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@haco-logistics.com"
+      },
+      "hours": {
+        "label": "Working Hours",
+        "value": "Monday – Friday: 8:00 – 17:30\nSaturday: 8:00 – 12:00"
+      }
+    },
+    "map": {
+      "title": "HACO Logistics Map",
+      "cta": "View larger map →"
+    }
+  },
   "faq": {
     "title": "FAQ",
     "items": [
@@ -117,7 +192,23 @@
       "title": "Confirm Information",
       "confirm": "Confirm and Submit",
       "success": "Thank you! We will contact you within 24 hours.",
-      "error": "An error occurred, please try again."
+      "error": "An error occurred, please try again.",
+      "review": {
+        "fullName": "Full Name",
+        "jobTitle": "Job Title",
+        "company": "Company",
+        "email": "Email",
+        "phone": "Phone",
+        "serviceType": "Service",
+        "origin": "Origin",
+        "destination": "Destination",
+        "cargoType": "Cargo Type",
+        "weight": "Weight",
+        "volume": "Volume",
+        "quantity": "Number of Packages",
+        "readyDate": "Ready Date",
+        "notes": "Notes"
+      }
     },
     "next": "Next",
     "back": "Back",

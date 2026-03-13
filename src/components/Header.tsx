@@ -33,9 +33,9 @@ export default function Header() {
   ];
 
   const blogItems = [
-    { label: locale === 'vi' ? 'Tin tức' : 'News', href: lp('/bai-viet/tin-tuc') },
-    { label: locale === 'vi' ? 'Kiến thức logistics' : 'Logistics Knowledge', href: lp('/bai-viet/kien-thuc') },
-    { label: locale === 'vi' ? 'Quy trình xuất nhập khẩu' : 'Import/Export Process', href: lp('/bai-viet/quy-trinh') },
+    { label: locale === 'vi' ? 'Bản tin Haco Logistics' : 'Haco Logistics News', href: lp('/bai-viet/tin-tuc') },
+    { label: locale === 'vi' ? 'Bản tin thị trường' : 'Market News', href: lp('/bai-viet/kien-thuc') },
+    { label: locale === 'vi' ? 'Thông báo' : 'Announcements', href: lp('/bai-viet/quy-trinh') },
   ];
 
   return (
@@ -44,18 +44,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href={lp('/')} className="flex items-center gap-2 shrink-0">
-            <div className="w-12 h-12">
-              <svg viewBox="0 0 100 100" className="w-full h-full">
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#F5A623" strokeWidth="6"/>
-                <ellipse cx="50" cy="50" rx="45" ry="20" fill="none" stroke="#F5A623" strokeWidth="4"/>
-                <line x1="5" y1="50" x2="95" y2="50" stroke="#F5A623" strokeWidth="4"/>
-                <path d="M25 20 Q50 5 75 20" fill="none" stroke="#F5A623" strokeWidth="3"/>
-                <path d="M25 80 Q50 95 75 80" fill="none" stroke="#F5A623" strokeWidth="3"/>
-              </svg>
-            </div>
-            <div>
-              <div className="text-[#F5A623] font-bold text-lg leading-tight tracking-wide">HACO</div>
-              <div className="text-[#1B2A6B] text-[9px] leading-tight tracking-widest uppercase">International Logistics Co., Ltd</div>
+            <div className="w-36 h-36 relative">
+              <img src="/images/Haco-Logo.png" alt="HACO Logistics Logo" className="w-full h-full object-contain" />
             </div>
           </Link>
 

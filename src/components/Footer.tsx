@@ -77,7 +77,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex-1 text-center text-sm text-[#1877F2] border border-[#1877F2] rounded py-1.5 hover:bg-blue-50 transition-colors font-medium"
                 >
-                  👍 Follow Page
+                Follow Page
                 </a>
                 <a
                   href="https://www.facebook.com/hacologistics"

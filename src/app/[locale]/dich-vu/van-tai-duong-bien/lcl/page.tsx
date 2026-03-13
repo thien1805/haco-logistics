@@ -1,10 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Link from 'next/link';
 
-export default function LCLPage({ params }: { params: { locale: string } }) {
-  const { locale } = params;
-  const lp = (path: string) => `/${locale}${path}`;
+export default function LCLPage() {
 
   return (
     <>
@@ -22,7 +19,7 @@ export default function LCLPage({ params }: { params: { locale: string } }) {
           </div>
         </section>
 
-        {/* Content */}
+        {/* Content
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#1B2A6B] mb-6">LCL là gì?</h2>
@@ -61,7 +58,7 @@ export default function LCLPage({ params }: { params: { locale: string } }) {
               </Link>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>
