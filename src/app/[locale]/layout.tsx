@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import '../globals.css';
 import { locales, type Locale } from '@/i18n';
+import ChatWidget from '@/components/ChatWidget';
 
 const montserrat = Montserrat({ subsets: ['latin', 'vietnamese'], weight: ['400', '500', '600', '700'], display: 'swap' });
 
@@ -41,6 +42,7 @@ export default async function LocaleLayout({
       <body className={montserrat.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
+          <ChatWidget />
         </NextIntlClientProvider>
       </body>
     </html>

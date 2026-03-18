@@ -14,8 +14,8 @@ export default function Header() {
   const [seaOpen, setSeaOpen] = useState(false);
   const [blogOpen, setBlogOpen] = useState(false);
 
-  const switchLocale = (newLocale: 'vi' | 'en') => {
-    const pathWithoutLocale = window.location.pathname.replace(/^\/(vi|en)/, '') || '/';
+  const switchLocale = (newLocale: 'vi' | 'en' | 'ko') => {
+    const pathWithoutLocale = window.location.pathname.replace(/^\/(vi|en|ko)/, '') || '/';
     window.location.href = `/${newLocale}${pathWithoutLocale}`;
   };
 
@@ -154,6 +154,12 @@ export default function Header() {
               >
                 EN
               </button>
+              <button
+                onClick={() => switchLocale('ko')}
+                className={`px-3 py-1.5 font-medium transition-colors ${locale === 'ko' ? 'bg-[#1B2A6B] text-white' : 'text-gray-600 hover:bg-gray-100'}`}
+              >
+                KO
+              </button>
             </div>
           </div>
 
@@ -194,6 +200,7 @@ export default function Header() {
             <div className="flex gap-2 pt-3 border-t">
               <button onClick={() => switchLocale('vi')} className={`px-4 py-1.5 text-sm font-medium rounded ${locale === 'vi' ? 'bg-[#1B2A6B] text-white' : 'border text-gray-600'}`}>VI</button>
               <button onClick={() => switchLocale('en')} className={`px-4 py-1.5 text-sm font-medium rounded ${locale === 'en' ? 'bg-[#1B2A6B] text-white' : 'border text-gray-600'}`}>EN</button>
+              <button onClick={() => switchLocale('ko')} className={`px-4 py-1.5 text-sm font-medium rounded ${locale === 'ko' ? 'bg-[#1B2A6B] text-white' : 'border text-gray-600'}`}>KO</button>
             </div>
           </div>
         </div>

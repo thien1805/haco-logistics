@@ -10,6 +10,7 @@ const categories = [
 
 const placeholderPosts = [
   {
+    id: '1',
     cat: 'Tin tức',
     catHref: 'tin-tuc',
     title: 'HACO Logistics mở rộng tuyến vận tải đường biển đến châu Âu',
@@ -17,6 +18,7 @@ const placeholderPosts = [
     date: '15/06/2025',
   },
   {
+    id: '2',
     cat: 'Kiến thức logistics',
     catHref: 'kien-thuc',
     title: 'LCL và FCL: Khi nào nên chọn phương thức nào?',
@@ -24,6 +26,7 @@ const placeholderPosts = [
     date: '08/06/2025',
   },
   {
+    id: '3',
     cat: 'Quy trình xuất nhập khẩu',
     catHref: 'quy-trinh',
     title: 'Hướng dẫn khai báo hải quan điện tử qua VNACCS/VCIS',
@@ -31,6 +34,7 @@ const placeholderPosts = [
     date: '02/06/2025',
   },
   {
+    id: '4',
     cat: 'Tin tức',
     catHref: 'tin-tuc',
     title: 'Giá cước vận tải biển 2025: Xu hướng và dự báo',
@@ -38,6 +42,7 @@ const placeholderPosts = [
     date: '28/05/2025',
   },
   {
+    id: '5',
     cat: 'Kiến thức logistics',
     catHref: 'kien-thuc',
     title: 'Incoterms 2020: Giải thích các điều kiện thương mại phổ biến',
@@ -45,6 +50,7 @@ const placeholderPosts = [
     date: '20/05/2025',
   },
   {
+    id: '6',
     cat: 'Quy trình xuất nhập khẩu',
     catHref: 'quy-trinh',
     title: 'Chứng từ cần thiết cho lô hàng xuất khẩu đi Mỹ',
@@ -92,25 +98,27 @@ export default function BlogIndexPage({ params }: { params: { locale: string } }
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {placeholderPosts.map((post) => (
-                <article key={post.title} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow group">
-                  <div className="h-44 bg-gradient-to-br from-[#1B2A6B] to-blue-400 flex items-center justify-center text-white text-4xl">
-                    {post.catHref === 'tin-tuc' ? '📰' : post.catHref === 'kien-thuc' ? '📚' : '📋'}
-                  </div>
-                  <div className="p-5">
-                    <div className="flex items-center justify-between mb-3">
-                      <Link
-                        href={lp(`/bai-viet/${post.catHref}`)}
-                        className="text-xs font-semibold text-[#F5A623] uppercase tracking-wide hover:underline"
-                      >
-                        {post.cat}
-                      </Link>
-                      <span className="text-xs text-gray-400">{post.date}</span>
+                <article key={post.id} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow group cursor-pointer">
+                  <Link href={lp(`/bai-viet/${post.id}`)}>
+                    <div className="h-44 bg-gradient-to-br from-[#1B2A6B] to-blue-400 flex items-center justify-center text-white text-4xl">
+                      {post.catHref === 'tin-tuc' ? '📰' : post.catHref === 'kien-thuc' ? '📚' : '📋'}
                     </div>
-                    <h2 className="font-bold text-[#1B2A6B] text-base mb-2 leading-snug group-hover:text-[#F5A623] transition-colors line-clamp-2">
-                      {post.title}
-                    </h2>
-                    <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">{post.excerpt}</p>
-                  </div>
+                    <div className="p-5">
+                      <div className="flex items-center justify-between mb-3">
+                        <Link
+                          href={lp(`/bai-viet/${post.catHref}`)}
+                          className="text-xs font-semibold text-[#F5A623] uppercase tracking-wide hover:underline"
+                        >
+                          {post.cat}
+                        </Link>
+                        <span className="text-xs text-gray-400">{post.date}</span>
+                      </div>
+                      <h2 className="font-bold text-[#1B2A6B] text-base mb-2 leading-snug group-hover:text-[#F5A623] transition-colors line-clamp-2">
+                        {post.title}
+                      </h2>
+                      <p className="text-gray-500 text-sm leading-relaxed line-clamp-3">{post.excerpt}</p>
+                    </div>
+                  </Link>
                 </article>
               ))}
             </div>
