@@ -2,6 +2,7 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon, ChevronDownIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
@@ -45,7 +46,7 @@ export default function Header() {
           {/* Logo */}
           <Link href={lp('/')} className="flex items-center gap-2 shrink-0">
             <div className="w-36 h-36 relative">
-              <img src="/images/Haco-Logo.png" alt="HACO Logistics Logo" className="w-full h-full object-contain" />
+              <Image src="/images/Haco-Logo.png" alt="HACO Logistics Logo" fill className="object-contain" />
             </div>
           </Link>
 
