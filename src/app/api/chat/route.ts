@@ -27,7 +27,7 @@ interface OpenAIResponse {
 
 export async function POST(request: NextRequest): Promise<NextResponse> {
   try {
-    const body: RequestBody = await request.json();
+    const body = (await request.json()) as RequestBody;
     const { message, conversationHistory } = body;
 
     // Validate input
@@ -84,7 +84,7 @@ Nếu không biết, hãy yêu cầu khách liên hệ nhân viên.`;
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4o-mini',
         messages,
         temperature: 0.7,
         max_tokens: 300,
@@ -92,8 +92,14 @@ Nếu không biết, hãy yêu cầu khách liên hệ nhân viên.`;
     });
 
     if (!openaiResponse.ok) {
-      const errorData = await openaiResponse.json();
-      console.error('OpenAI API error:', errorData);
+  type OpenAIError = {
+    error?: {
+      message?: string;
+    };
+  };
+
+  const errorData: OpenAIError = await openaiResponse.json();
+  console.error('OpenAI API error:', errorData);
       
       return NextResponse.json(
         { error: 'Failed to get response from AI service' },
@@ -101,7 +107,7 @@ Nếu không biết, hãy yêu cầu khách liên hệ nhân viên.`;
       );
     }
 
-    const data: OpenAIResponse = await openaiResponse.json();
+    const data = (await openaiResponse.json()) as OpenAIResponse;
     const assistantMessage = data.choices?.[0]?.message?.content;
 
     if (!assistantMessage) {
