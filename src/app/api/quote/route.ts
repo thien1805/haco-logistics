@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const TO_EMAIL = process.env.QUOTE_TO_EMAIL ?? 'info@haco-logistics.com';
 
 export async function POST(req: NextRequest) {
@@ -60,13 +58,17 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
-    await resend.emails.send({
-      from: 'HACO Logistics <noreply@haco-logistics.com>',
-      to: [TO_EMAIL],
-      replyTo: email,
-      subject: `[Báo Giá] ${fullName} - ${serviceLabels[data.serviceType] ?? data.serviceType}`,
-      html: htmlBody,
-    });
+    // Only send email if API key is available
+    if (process.env.RESEND_API_KEY) {
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      await resend.emails.send({
+        from: 'HACO Logistics <noreply@haco-logistics.com>',
+        to: [TO_EMAIL],
+        replyTo: email,
+        subject: `[Báo Giá] ${fullName} - ${serviceLabels[data.serviceType] ?? data.serviceType}`,
+        html: htmlBody,
+      });
+    }
 
     return NextResponse.json({ success: true });
   } catch (err) {
