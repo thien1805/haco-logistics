@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Footer() {
   const t = useTranslations('footer');
   const locale = useLocale();
-  const localePath = (path: string) => (locale === 'vi' ? path : `/en${path}`);
+  const localePath = (path: string) => `/${locale}${path}`;
 
   const services = [
     { label: locale === 'vi' ? 'Vận tải đường biển' : 'Sea Freight', href: localePath('/dich-vu/van-tai-duong-bien') },
