@@ -17,6 +17,12 @@ interface OpenAIMessage {
   content: string;
 }
 
+interface OpenAIError {
+  error?: {
+    message?: string;
+  };
+}
+
 interface OpenAIResponse {
   choices: Array<{
     message: {
@@ -92,14 +98,8 @@ Nếu không biết, hãy yêu cầu khách liên hệ nhân viên.`;
     });
 
     if (!openaiResponse.ok) {
-  type OpenAIError = {
-    error?: {
-      message?: string;
-    };
-  };
-
-  const errorData: OpenAIError = await openaiResponse.json();
-  console.error('OpenAI API error:', errorData);
+      const errorData: OpenAIError = await openaiResponse.json();
+      console.error('OpenAI API error:', errorData);
       
       return NextResponse.json(
         { error: 'Failed to get response from AI service' },
