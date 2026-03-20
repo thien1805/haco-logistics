@@ -2,8 +2,19 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
+// Define BlogPost interface
+interface BlogPost {
+  id: string;
+  cat: string;
+  catHref: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  content: string;
+}
+
 // Blog post data - expanded with full content
-const blogPosts: { [key: string]: any } = {
+const blogPosts: { [key: string]: BlogPost } = {
   '1': {
     id: '1',
     cat: 'Tin tức',
@@ -247,9 +258,9 @@ export default function BlogPostPage({
               <h2 className="text-2xl md:text-3xl font-bold text-[#1B2A6B] mb-8">Bài viết liên quan</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {Object.values(blogPosts)
-                  .filter((p: any) => p.id !== id && p.catHref === post.catHref)
+                  .filter((p: BlogPost) => p.id !== id && p.catHref === post.catHref)
                   .slice(0, 2)
-                  .map((relatedPost: any) => (
+                  .map((relatedPost: BlogPost) => (
                     <Link
                       key={relatedPost.id}
                       href={lp(`/bai-viet/${relatedPost.id}`)}
